@@ -16,7 +16,7 @@ var passport = require('passport')
 module.exports = function (app) {
   // render
   app.set('views', config.backend.root + '/server/views')
-  app.engine('html', require('ejs').renderFile)
+  // app.engine('html', require('ejs').renderFile)
   app.set('view engine', 'html')
 
   app.use(compression())
